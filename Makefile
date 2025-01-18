@@ -1,4 +1,3 @@
-
 ODIN = odin
 
 SERVER_NAME = game_server
