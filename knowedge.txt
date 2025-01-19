@@ -1,0 +1,8 @@
+The socket numbers being different between the client and server is actually normal and expected! You don't need (and shouldn't try) to make them have the same socket numbers. Here's why:
+
+Socket numbers are local to each process:
+
+
+Your server process has its own file descriptor table (e.g., socket #8)
+Your client process has its own separate file descriptor table (e.g., socket #11)
+These numbers are just local references, like ID cards for each process
